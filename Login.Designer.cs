@@ -174,7 +174,7 @@
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Teal;
-            this.label9.Location = new System.Drawing.Point(1161, 92);
+            this.label9.Location = new System.Drawing.Point(1169, 92);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(71, 24);
             this.label9.TabIndex = 78;
@@ -184,7 +184,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.White;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(1109, 92);
+            this.pictureBox5.Location = new System.Drawing.Point(1117, 92);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(46, 38);
@@ -198,7 +198,7 @@
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Teal;
-            this.label10.Location = new System.Drawing.Point(1038, 92);
+            this.label10.Location = new System.Drawing.Point(1046, 92);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(65, 24);
             this.label10.TabIndex = 76;
@@ -208,7 +208,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.White;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(986, 92);
+            this.pictureBox4.Location = new System.Drawing.Point(997, 92);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(46, 38);
@@ -234,7 +234,7 @@
             this.label12.BackColor = System.Drawing.Color.White;
             this.label12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Teal;
-            this.label12.Location = new System.Drawing.Point(720, 92);
+            this.label12.Location = new System.Drawing.Point(710, 92);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(97, 24);
             this.label12.TabIndex = 73;
@@ -256,7 +256,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.White;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(677, 92);
+            this.pictureBox6.Location = new System.Drawing.Point(658, 92);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(46, 38);
