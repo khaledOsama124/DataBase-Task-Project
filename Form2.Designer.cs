@@ -35,7 +35,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -113,15 +112,6 @@
             this.label4.Size = new System.Drawing.Size(167, 24);
             this.label4.TabIndex = 8;
             this.label4.Text = "Employee Gander";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(78, 485);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(345, 32);
-            this.textBox3.TabIndex = 10;
             // 
             // textBox4
             // 
@@ -222,6 +212,9 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "male",
+            "Female"});
             this.comboBox1.Location = new System.Drawing.Point(75, 367);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(347, 32);
@@ -243,7 +236,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
@@ -271,7 +263,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
