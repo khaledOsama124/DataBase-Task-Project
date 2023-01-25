@@ -50,7 +50,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(312, 653);
+            this.panel1.Size = new System.Drawing.Size(312, 700);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -160,7 +160,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(855, 653);
+            this.ClientSize = new System.Drawing.Size(854, 700);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
