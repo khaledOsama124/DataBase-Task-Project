@@ -107,9 +107,9 @@
             this.label4.ForeColor = System.Drawing.Color.Teal;
             this.label4.Location = new System.Drawing.Point(74, 325);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(155, 24);
+            this.label4.Size = new System.Drawing.Size(167, 24);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Employee Name";
+            this.label4.Text = "Employee Gander";
             // 
             // textBox2
             // 
