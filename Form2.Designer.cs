@@ -34,9 +34,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Location = new System.Drawing.Point(326, 258);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(446, 202);
+            this.panel1.Size = new System.Drawing.Size(1263, 202);
             this.panel1.TabIndex = 0;
             // 
             // Form2
