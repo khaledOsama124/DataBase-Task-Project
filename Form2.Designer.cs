@@ -57,10 +57,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(456, 234);
+            this.label2.Location = new System.Drawing.Point(458, 237);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(228, 24);
+            this.label2.Size = new System.Drawing.Size(256, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Management Employees";
             // 
