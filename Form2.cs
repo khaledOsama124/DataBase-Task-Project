@@ -16,5 +16,10 @@ namespace DataBase_Task_Project
         {
             InitializeComponent();
         }
+
+        private void gunaDateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
