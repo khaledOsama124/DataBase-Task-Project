@@ -12,7 +12,7 @@ namespace DataBase_Task_Project
 {
     public partial class Department : Form
     {
-        Functions
+        Functions Con;
         public Department()
         {
             InitializeComponent();
