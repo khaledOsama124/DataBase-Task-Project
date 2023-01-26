@@ -55,7 +55,7 @@
             this.gencb = new System.Windows.Forms.ComboBox();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaDataGridView2 = new Guna.UI.WinForms.GunaDataGridView();
-            this.gunaDataGridView3 = new Guna.UI.WinForms.GunaDataGridView();
+            this.EmployeeList = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaDateDOBTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.JDate = new Guna.UI.WinForms.GunaDateTimePicker();
             this.ADDbtn = new System.Windows.Forms.Button();
@@ -72,7 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -363,15 +363,15 @@
             this.gunaDataGridView2.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gunaDataGridView2.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // gunaDataGridView3
+            // EmployeeList
             // 
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.gunaDataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gunaDataGridView3.BackgroundColor = System.Drawing.Color.White;
-            this.gunaDataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaDataGridView3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunaDataGridView3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.EmployeeList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.EmployeeList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.EmployeeList.BackgroundColor = System.Drawing.Color.White;
+            this.EmployeeList.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EmployeeList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.EmployeeList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -379,8 +379,8 @@
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.gunaDataGridView3.ColumnHeadersHeight = 4;
+            this.EmployeeList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.EmployeeList.ColumnHeadersHeight = 4;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -388,39 +388,39 @@
             dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView3.DefaultCellStyle = dataGridViewCellStyle9;
-            this.gunaDataGridView3.EnableHeadersVisualStyles = false;
-            this.gunaDataGridView3.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView3.Location = new System.Drawing.Point(474, 225);
-            this.gunaDataGridView3.Name = "gunaDataGridView3";
-            this.gunaDataGridView3.RowHeadersVisible = false;
-            this.gunaDataGridView3.RowHeadersWidth = 51;
-            this.gunaDataGridView3.RowTemplate.Height = 26;
-            this.gunaDataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView3.Size = new System.Drawing.Size(739, 546);
-            this.gunaDataGridView3.TabIndex = 26;
-            this.gunaDataGridView3.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.gunaDataGridView3.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView3.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.gunaDataGridView3.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView3.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView3.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView3.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView3.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView3.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView3.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gunaDataGridView3.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaDataGridView3.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gunaDataGridView3.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gunaDataGridView3.ThemeStyle.HeaderStyle.Height = 4;
-            this.gunaDataGridView3.ThemeStyle.ReadOnly = false;
-            this.gunaDataGridView3.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView3.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunaDataGridView3.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaDataGridView3.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gunaDataGridView3.ThemeStyle.RowsStyle.Height = 26;
-            this.gunaDataGridView3.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView3.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.EmployeeList.DefaultCellStyle = dataGridViewCellStyle9;
+            this.EmployeeList.EnableHeadersVisualStyles = false;
+            this.EmployeeList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.EmployeeList.Location = new System.Drawing.Point(474, 225);
+            this.EmployeeList.Name = "EmployeeList";
+            this.EmployeeList.RowHeadersVisible = false;
+            this.EmployeeList.RowHeadersWidth = 51;
+            this.EmployeeList.RowTemplate.Height = 26;
+            this.EmployeeList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.EmployeeList.Size = new System.Drawing.Size(739, 546);
+            this.EmployeeList.TabIndex = 26;
+            this.EmployeeList.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.EmployeeList.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.EmployeeList.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.EmployeeList.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.EmployeeList.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.EmployeeList.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.EmployeeList.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.EmployeeList.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.EmployeeList.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.EmployeeList.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.EmployeeList.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeList.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.EmployeeList.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.EmployeeList.ThemeStyle.HeaderStyle.Height = 4;
+            this.EmployeeList.ThemeStyle.ReadOnly = false;
+            this.EmployeeList.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.EmployeeList.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.EmployeeList.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeList.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.EmployeeList.ThemeStyle.RowsStyle.Height = 26;
+            this.EmployeeList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.EmployeeList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // gunaDateDOBTimePicker1
             // 
@@ -611,7 +611,7 @@
             this.Controls.Add(this.ADDbtn);
             this.Controls.Add(this.JDate);
             this.Controls.Add(this.gunaDateDOBTimePicker1);
-            this.Controls.Add(this.gunaDataGridView3);
+            this.Controls.Add(this.EmployeeList);
             this.Controls.Add(this.gunaDataGridView2);
             this.Controls.Add(this.gunaDataGridView1);
             this.Controls.Add(this.gencb);
@@ -639,7 +639,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -668,7 +668,7 @@
         private System.Windows.Forms.ComboBox gencb;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView2;
-        private Guna.UI.WinForms.GunaDataGridView gunaDataGridView3;
+        private Guna.UI.WinForms.GunaDataGridView EmployeeList;
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateDOBTimePicker1;
         private Guna.UI.WinForms.GunaDateTimePicker JDate;
         private System.Windows.Forms.Button ADDbtn;
