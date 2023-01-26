@@ -58,7 +58,7 @@
             this.gunaDataGridView3 = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaDateDOBTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.JDate = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ADDbtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -467,20 +467,20 @@
             this.JDate.Text = "2023 ,يناير 25";
             this.JDate.Value = new System.DateTime(2023, 1, 25, 23, 12, 10, 842);
             // 
-            // button1
+            // ADDbtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Teal;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(75, 734);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 58);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Add ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.ADDbtn.BackColor = System.Drawing.Color.Teal;
+            this.ADDbtn.FlatAppearance.BorderSize = 2;
+            this.ADDbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ADDbtn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ADDbtn.ForeColor = System.Drawing.Color.White;
+            this.ADDbtn.Location = new System.Drawing.Point(75, 734);
+            this.ADDbtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ADDbtn.Name = "ADDbtn";
+            this.ADDbtn.Size = new System.Drawing.Size(151, 58);
+            this.ADDbtn.TabIndex = 29;
+            this.ADDbtn.Text = "Add ";
+            this.ADDbtn.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -608,7 +608,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ADDbtn);
             this.Controls.Add(this.JDate);
             this.Controls.Add(this.gunaDateDOBTimePicker1);
             this.Controls.Add(this.gunaDataGridView3);
@@ -671,7 +671,7 @@
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView3;
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateDOBTimePicker1;
         private Guna.UI.WinForms.GunaDateTimePicker JDate;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ADDbtn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox5;
