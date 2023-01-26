@@ -35,7 +35,7 @@ namespace DataBase_Task_Project
                     MessageBox.Show("missing Data!!!");
                 }else
                 {
-
+                    string Dep = DepNameTb.Text;
                 }
             }
             catch (Exception ex)
