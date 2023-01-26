@@ -27,7 +27,8 @@ namespace DataBase_Task_Project
         public DataTable GetData(string Query)
         {
             dt = new DataTable();
-            sda = new SqlDataAdapter();
+            sda = new SqlDataAdapter(Query,Constr);
+            sda.Fill
 
         }
     }
