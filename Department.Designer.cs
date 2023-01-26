@@ -128,7 +128,7 @@
             this.DepList.DefaultCellStyle = dataGridViewCellStyle3;
             this.DepList.EnableHeadersVisualStyles = false;
             this.DepList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DepList.Location = new System.Drawing.Point(479, 195);
+            this.DepList.Location = new System.Drawing.Point(489, 240);
             this.DepList.Name = "DepList";
             this.DepList.RowHeadersVisible = false;
             this.DepList.RowHeadersWidth = 51;
