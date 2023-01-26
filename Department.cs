@@ -21,7 +21,7 @@ namespace DataBase_Task_Project
         }
 
         
-        private void ListerDepartments()
+        private void showDepartments()
         {
             string Query = "Select * FROM DepartmentTb1";
             DepList.DataSource = Con.GetData(Query);
