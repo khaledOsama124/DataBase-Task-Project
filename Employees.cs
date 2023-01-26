@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace DataBase_Task_Project
 {
-    public partial class Form2 : Form
+    public partial class Employees : Form
     {
         public Form2()
         {

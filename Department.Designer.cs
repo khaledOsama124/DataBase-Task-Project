@@ -9,12 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EmployeeMgmt1
+namespace DataBase_Task_Project
 {
-    public partial class Departments : Form
+    public partial class Department : Form
     {
         Functions Con;
-        public Departments()
+        public Department()
         {
             InitializeComponent();
             Con = new Functions();
