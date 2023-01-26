@@ -59,7 +59,7 @@
             this.gunaDateDOBTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.JDate = new Guna.UI.WinForms.GunaDateTimePicker();
             this.ADDbtn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.UpdateBtn = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -482,20 +482,20 @@
             this.ADDbtn.Text = "Add ";
             this.ADDbtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // UpdateBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(269, 734);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 62);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.UpdateBtn.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.UpdateBtn.FlatAppearance.BorderSize = 0;
+            this.UpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UpdateBtn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.UpdateBtn.Location = new System.Drawing.Point(269, 734);
+            this.UpdateBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.Size = new System.Drawing.Size(151, 62);
+            this.UpdateBtn.TabIndex = 30;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.UseVisualStyleBackColor = false;
             // 
             // label9
             // 
@@ -607,7 +607,7 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.UpdateBtn);
             this.Controls.Add(this.ADDbtn);
             this.Controls.Add(this.JDate);
             this.Controls.Add(this.gunaDateDOBTimePicker1);
@@ -672,7 +672,7 @@
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateDOBTimePicker1;
         private Guna.UI.WinForms.GunaDateTimePicker JDate;
         private System.Windows.Forms.Button ADDbtn;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button UpdateBtn;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label10;
