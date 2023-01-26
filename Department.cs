@@ -33,6 +33,9 @@ namespace DataBase_Task_Project
                 if(DepNameTb.Text == "") 
                 {
 
+                }else
+                {
+
                 }
             }
             catch (Exception ex)
