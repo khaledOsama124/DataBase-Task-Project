@@ -28,6 +28,14 @@ namespace DataBase_Task_Project
         }
         private void AddBtn_Click(object sender, EventArgs e)
         {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+
+            }
 
         }
     }
