@@ -17,9 +17,10 @@ namespace DataBase_Task_Project
         {
             InitializeComponent();
             Con = new Functions();
-            ListerDepartments();
+            showDepartments();
         }
 
+        
         private void ListerDepartments()
         {
             string Query = "Select * FROM DepartmentTb1";
