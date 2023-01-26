@@ -42,6 +42,7 @@ namespace DataBase_Task_Project
                     Con.SetData(Query);
                     showDepartments();
                     MessageBox.Show("Department Added!!");
+                    DepNameTb.Text = "";
                 }
             }
             catch (Exception ex)
