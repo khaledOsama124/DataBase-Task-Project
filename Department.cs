@@ -30,7 +30,7 @@ namespace DataBase_Task_Project
         {
             try
             {
-                if()
+                if(DepNameTb.Text == "") 
                 {
 
                 }
