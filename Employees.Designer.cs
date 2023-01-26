@@ -1,6 +1,6 @@
 ﻿namespace DataBase_Task_Project
 {
-    partial class Form2
+    partial class Employees
     {
         /// <summary>
         /// Required designer variable.

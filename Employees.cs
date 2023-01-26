@@ -12,12 +12,24 @@ namespace DataBase_Task_Project
 {
     public partial class Employees : Form
     {
-        public Form2()
+        Functions con;
+        public Employees()
         {
             InitializeComponent();
+            con = new Functions();
+            showEmp();
+        }
+        private void showEmp()
+        {
+            string Query = "select * From EmployeesTb1";
+            EmployeeList.DataSource = con.GetData(Query);
         }
 
-        private void gunaDateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void GetDepartment()
+        {
+            String Query = "Select * from DepartmentTb1";
+        }
+        private void AddBtn_Click(object sender, EventArgs e)
         {
 
         }
