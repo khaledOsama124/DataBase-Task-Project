@@ -52,7 +52,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.GenCp = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.gencb = new System.Windows.Forms.ComboBox();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaDataGridView2 = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaDataGridView3 = new Guna.UI.WinForms.GunaDataGridView();
@@ -232,18 +232,18 @@
             this.GenCp.Size = new System.Drawing.Size(347, 32);
             this.GenCp.TabIndex = 20;
             // 
-            // comboBox2
+            // gencb
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.gencb.FormattingEnabled = true;
+            this.gencb.Items.AddRange(new object[] {
             "IT",
             "Mecha",
             "Auto ",
             "Reweable Energy"});
-            this.comboBox2.Location = new System.Drawing.Point(73, 410);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(347, 32);
-            this.comboBox2.TabIndex = 22;
+            this.gencb.Location = new System.Drawing.Point(73, 410);
+            this.gencb.Name = "gencb";
+            this.gencb.Size = new System.Drawing.Size(347, 32);
+            this.gencb.TabIndex = 22;
             // 
             // gunaDataGridView1
             // 
@@ -614,7 +614,7 @@
             this.Controls.Add(this.gunaDataGridView3);
             this.Controls.Add(this.gunaDataGridView2);
             this.Controls.Add(this.gunaDataGridView1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.gencb);
             this.Controls.Add(this.GenCp);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel2);
@@ -665,7 +665,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox GenCp;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox gencb;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView2;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView3;
