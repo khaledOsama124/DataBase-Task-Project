@@ -17,6 +17,7 @@ namespace DataBase_Task_Project
         {
             InitializeComponent();
             Con = new Functions();
+            ListerDepartments();
         }
 
         private void ListerDepartments()
