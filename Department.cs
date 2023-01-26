@@ -32,7 +32,7 @@ namespace DataBase_Task_Project
             {
                 if(DepNameTb.Text == "") 
                 {
-
+                    MessageBox.Show("missing Data!!!");
                 }else
                 {
 
