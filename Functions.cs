@@ -17,7 +17,7 @@ namespace DataBase_Task_Project
         private string Constr;
         public Functions()
         {
-            Constr = @"";
+            Constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\El-Wattaneya\Documents\EmpDb.mdf;Integrated Security=True;Connect Timeout=30";
 
         }
     }
