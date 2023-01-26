@@ -40,6 +40,7 @@ namespace DataBase_Task_Project
                     string Query = "Insert into DepartmentTb1 values({'0'})";
                     Query = String.Format(DepNameTb.Text);
                     Con.SetData(Query);
+                    showDepartments()
                 }
             }
             catch (Exception ex)
