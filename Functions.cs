@@ -41,6 +41,8 @@ namespace DataBase_Task_Project
                 Con.Open();
             }
             Cmd.CommandText = Query;
+            cnt = Cmd.ExecuteNonQuery();
+            return cnt;
 
         }
         
