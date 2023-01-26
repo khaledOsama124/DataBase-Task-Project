@@ -36,7 +36,7 @@ namespace DataBase_Task_Project
                 }else
                 {
                     string Dep = DepNameTb.Text;
-                    string Query = "Insert into DepartmentTb1";
+                    string Query = "Insert into DepartmentTb1 values({'0'})";
                 }
             }
             catch (Exception ex)
