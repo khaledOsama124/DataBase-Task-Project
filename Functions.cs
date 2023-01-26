@@ -26,7 +26,7 @@ namespace DataBase_Task_Project
 
         public DataTable GetData(string Query)
         {
-            dt = 
+            dt = new DataTable()
         }
     }
 }
