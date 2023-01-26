@@ -36,6 +36,7 @@ namespace DataBase_Task_Project
                 }else
                 {
                     string Dep = DepNameTb.Text;
+                    string Query=
                 }
             }
             catch (Exception ex)
