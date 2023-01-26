@@ -34,6 +34,9 @@ namespace DataBase_Task_Project
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
+            }
+            {
 
             }
 
