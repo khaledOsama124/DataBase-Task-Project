@@ -16,15 +16,16 @@ namespace DataBase_Task_Project
         public Department()
         {
             InitializeComponent();
+            Con = new Functions();
         }
 
         private void ListerDepartments()
         {
             string Query = "Select * FROM DepartmentTb1";
-            DepList.DataSource=ConcurrentExclusiveSchedulerPair.
+            DepList.DataSource = Con.GetData(Query);
 
         }
-        private void label4_Click(object sender, EventArgs e)
+        private void AddBtn_Click(object sender, EventArgs e)
         {
 
         }
