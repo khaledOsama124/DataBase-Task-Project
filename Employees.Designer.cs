@@ -48,7 +48,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.DailySaTb = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.GenCp = new System.Windows.Forms.ComboBox();
@@ -191,14 +191,14 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "Employee Daily salary";
             // 
-            // textBox6
+            // DailySaTb
             // 
-            this.textBox6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(73, 680);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(345, 32);
-            this.textBox6.TabIndex = 17;
+            this.DailySaTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DailySaTb.Location = new System.Drawing.Point(73, 680);
+            this.DailySaTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DailySaTb.Name = "DailySaTb";
+            this.DailySaTb.Size = new System.Drawing.Size(345, 32);
+            this.DailySaTb.TabIndex = 17;
             // 
             // panel2
             // 
@@ -618,7 +618,7 @@
             this.Controls.Add(this.GenCp);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.DailySaTb);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -661,7 +661,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox DailySaTb;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox GenCp;
