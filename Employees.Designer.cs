@@ -42,7 +42,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.EmployeeNameTb = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -122,14 +122,14 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Employee Name";
             // 
-            // textBox1
+            // EmployeeNameTb
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(75, 223);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(345, 32);
-            this.textBox1.TabIndex = 7;
+            this.EmployeeNameTb.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeNameTb.Location = new System.Drawing.Point(75, 223);
+            this.EmployeeNameTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.EmployeeNameTb.Name = "EmployeeNameTb";
+            this.EmployeeNameTb.Size = new System.Drawing.Size(345, 32);
+            this.EmployeeNameTb.TabIndex = 7;
             // 
             // label4
             // 
@@ -624,7 +624,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.EmployeeNameTb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -655,7 +655,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox EmployeeNameTb;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
