@@ -12,6 +12,7 @@ namespace DataBase_Task_Project
 {
     public partial class Department : Form
     {
+        Functions
         public Department()
         {
             InitializeComponent();
@@ -20,6 +21,7 @@ namespace DataBase_Task_Project
         private void ListerDepartments()
         {
             string Query = "Select * FROM DepartmentTb1";
+            DepList.DataSource=ConcurrentExclusiveSchedulerPair.
 
         }
         private void label4_Click(object sender, EventArgs e)
