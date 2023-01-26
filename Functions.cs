@@ -28,8 +28,19 @@ namespace DataBase_Task_Project
         {
             dt = new DataTable();
             sda = new SqlDataAdapter(Query,Constr);
-            sda.Fill
+            sda.Fill(dt);
+
+            return dt;
+
+        }
+        public int SetData(string Query)
+        {
+            int cnt = 0;
+            if(Con.State == ConnectionState.Closed) 
+
+        }
+        
 
         }
     }
-}
+
