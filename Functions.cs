@@ -19,8 +19,14 @@ namespace DataBase_Task_Project
         {
             Constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\El-Wattaneya\Documents\EmpDb.mdf;Integrated Security=True;Connect Timeout=30";
             Con = new SqlConnection(Constr);
-            Cmd=
+            Cmd = new SqlCommand();
+            Cmd.Connection = Con;
 
+        }
+
+        public DataTable GetData(string Query)
+        {
+            dt = 
         }
     }
 }
