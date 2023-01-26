@@ -40,6 +40,7 @@ namespace DataBase_Task_Project
             {
                 Con.Open();
             }
+            Cmd.CommandText = Query;
 
         }
         
