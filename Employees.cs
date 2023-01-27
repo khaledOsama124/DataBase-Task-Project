@@ -60,6 +60,8 @@ namespace DataBase_Task_Project
                     MessageBox.Show("Employee Tb1");
                     EmpName.Text = Query;
                     DailySaTb.Text = "";
+                    GenCp.SelectedIndex = -1;
+                    DepCb.SelectedIndex = -1;
 
 
 
