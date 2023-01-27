@@ -84,10 +84,43 @@ namespace DataBase_Task_Project
 
         private void DeleteBtn_Click(object sender, PaintEventArgs e)
         {
-            
+            try
+            {
+
+                if (key==0)
+                {
+                    MessageBox.Show("missing Data!!!");
+
+                }
+                else
+                {
+                    
+                    string Query = "Delete  DepartmentTb1 set EmpName =   where EmpId ={0}";
+                    Query = string.Format(Query ,key);
+                    con.SetData(Query);
+                    showEmp();
+                    MessageBox.Show("Employee Deleted!!");
+                    EmpName.Text = Query;
+                    DailySaTb.Text = "";
+                    GenCp.SelectedIndex = -1;
+                    DepCb.SelectedIndex = -1;
+
+
+
+
+
+                }
+            }
+            catch (Exception ex)
+
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+
 
         }
-    }
+
         private void UpdateBtn_Click(
             object sender,
             PaintEventArgs e)
@@ -108,10 +141,10 @@ namespace DataBase_Task_Project
                     String jdate = JDate.Value.ToString();
                     int salary = Convert.ToInt32(DailySaTb.Text);
                     string Query = "Update  DepartmentTb1 set EmpName =  '{0}',EmpGen ='{1}',EmpDep = '{2}',EmpDOB'{3}',EmpJdate'{4}',EmpSal='{5}' where EmpId ='{6}'";
-                    Query = string.Format(Query, Name, Gander, Dep, Data_OF_Birth, jdate, salary,key);
+                    Query = string.Format(Query, Name, Gander, Dep, Data_OF_Birth, jdate, salary, key);
                     con.SetData(Query);
                     showEmp();
-                    MessageBox.Show("Employee Tb1");
+                    MessageBox.Show("Employee ADD!!");
                     EmpName.Text = Query;
                     DailySaTb.Text = "";
                     GenCp.SelectedIndex = -1;
@@ -128,9 +161,15 @@ namespace DataBase_Task_Project
             {
                 MessageBox.Show(ex.Message);
             }
-            
+
+          
+
         }
         int key = 0;
 
+
+
     }
+
+}
 
