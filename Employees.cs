@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace DataBase_Task_Project
 {
-  
+
     public partial class Employees : Form
     {
         Functions con;
@@ -47,14 +47,14 @@ namespace DataBase_Task_Project
                 }
                 else
                 {
-                    String Name= EmpName.Text;
-                    String Gander = GenCp.SelectedItem.ToString(); 
+                    String Name = EmpName.Text;
+                    String Gander = GenCp.SelectedItem.ToString();
                     int Dep = Convert.ToInt32(GenCp.SelectedValue.ToString());
                     String Data_OF_Birth = DOBTb.Value.ToString();
                     String jdate = JDate.Value.ToString();
                     int salary = Convert.ToInt32(DailySaTb.Text);
                     string Query = "Insert into DepartmentTb1 values '{0}','{1}','{2}','{3}','{4}','{5}";
-                    Query = string.Format(Query,Name,Gander,Dep,Data_OF_Birth,jdate,salary);
+                    Query = string.Format(Query, Name, Gander, Dep, Data_OF_Birth, jdate, salary);
                     con.SetData(Query);
                     showEmp();
                     MessageBox.Show("Employee Tb1");
@@ -86,5 +86,45 @@ namespace DataBase_Task_Project
         {
 
         }
+        private void UpdateBtn_Click(object sender, PaintEventArgs e)
+        {
+            try
+            {
+                if (EmpName.Text == "" || GenCp.SelectedIndex == -1 || DepCb.SelectedIndex == -1 || DailySaTb.Text == "")
+                {
+                    MessageBox.Show("missing Data!!!");
+
+                }
+                else
+                {
+                    String Name = EmpName.Text;
+                    String Gander = GenCp.SelectedItem.ToString();
+                    int Dep = Convert.ToInt32(GenCp.SelectedValue.ToString());
+                    String Data_OF_Birth = DOBTb.Value.ToString();
+                    String jdate = JDate.Value.ToString();
+                    int salary = Convert.ToInt32(DailySaTb.Text);
+                    string Query = "Insert into DepartmentTb1 values '{0}','{1}','{2}','{3}','{4}','{5}";
+                    Query = string.Format(Query, Name, Gander, Dep, Data_OF_Birth, jdate, salary);
+                    con.SetData(Query);
+                    showEmp();
+                    MessageBox.Show("Employee Tb1");
+                    EmpName.Text = Query;
+                    DailySaTb.Text = "";
+                    GenCp.SelectedIndex = -1;
+                    DepCb.SelectedIndex = -1;
+
+
+
+
+
+                }
+            }
+            catch (Exception ex)
+
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
     }
 }
