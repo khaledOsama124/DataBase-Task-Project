@@ -53,8 +53,8 @@ namespace DataBase_Task_Project
                     String Data_OF_Birth = DOBTb.Value.ToString();
                     String jdate = JDate.Value.ToString();
                     int salary = Convert.ToInt32(DailySaTb.Text);
-                    string Query = "Insert into DepartmentTb1 values {('0')}";
-                    Query = string.Format(DepNameTb.Text);
+                    string Query = "Insert into DepartmentTb1 values '{0}','{1}','{2}','{3}','{4}','{5}";
+                    Query = string.Format(Query,Name,Gander,Dep,Data_OF_Birth,jdate,salary);
                     con.SetData(Query);
                     ShowDepartments();
                     MessageBox.Show("Department Tb1");
