@@ -52,7 +52,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.GenCp = new System.Windows.Forms.ComboBox();
-            this.gencb = new System.Windows.Forms.ComboBox();
+            this.DepCb = new System.Windows.Forms.ComboBox();
             this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaDataGridView2 = new Guna.UI.WinForms.GunaDataGridView();
             this.EmployeeList = new Guna.UI.WinForms.GunaDataGridView();
@@ -232,18 +232,18 @@
             this.GenCp.Size = new System.Drawing.Size(347, 32);
             this.GenCp.TabIndex = 20;
             // 
-            // gencb
+            // DepCb
             // 
-            this.gencb.FormattingEnabled = true;
-            this.gencb.Items.AddRange(new object[] {
+            this.DepCb.FormattingEnabled = true;
+            this.DepCb.Items.AddRange(new object[] {
             "IT",
             "Mecha",
             "Auto ",
             "Reweable Energy"});
-            this.gencb.Location = new System.Drawing.Point(73, 410);
-            this.gencb.Name = "gencb";
-            this.gencb.Size = new System.Drawing.Size(347, 32);
-            this.gencb.TabIndex = 22;
+            this.DepCb.Location = new System.Drawing.Point(73, 410);
+            this.DepCb.Name = "DepCb";
+            this.DepCb.Size = new System.Drawing.Size(347, 32);
+            this.DepCb.TabIndex = 22;
             // 
             // gunaDataGridView1
             // 
@@ -614,7 +614,7 @@
             this.Controls.Add(this.EmployeeList);
             this.Controls.Add(this.gunaDataGridView2);
             this.Controls.Add(this.gunaDataGridView1);
-            this.Controls.Add(this.gencb);
+            this.Controls.Add(this.DepCb);
             this.Controls.Add(this.GenCp);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel2);
@@ -665,7 +665,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox GenCp;
-        private System.Windows.Forms.ComboBox gencb;
+        private System.Windows.Forms.ComboBox DepCb;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
         private Guna.UI.WinForms.GunaDataGridView gunaDataGridView2;
         private Guna.UI.WinForms.GunaDataGridView EmployeeList;
