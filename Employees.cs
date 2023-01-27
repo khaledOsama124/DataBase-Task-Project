@@ -168,6 +168,7 @@ namespace DataBase_Task_Project
        private void EmployeeList_cellContentClick(object sender,DataGridViewCellEventArgs e)
         {
             EmpName.Text = EmployeeList.SelectedRows[0].Cells[1].Value.ToString();
+            EmpName.Text = EmployeeList.SelectedRows[0].Cells[1].Value.ToString();
             if (EmpName.Text == "")
             {
                 key = 0;
