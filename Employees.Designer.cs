@@ -443,7 +443,7 @@
             this.gunaDateDOBTimePicker1.TabIndex = 27;
             this.gunaDateDOBTimePicker1.Text = "2023 ,يناير 25";
             this.gunaDateDOBTimePicker1.Value = new System.DateTime(2023, 1, 25, 23, 12, 10, 842);
-            this.gunaDateDOBTimePicker1.ValueChanged += new System.EventHandler(this.gunaDateTimePicker1_ValueChanged);
+            this.gunaDateDOBTimePicker1.ValueChanged += new System.EventHandler(this.AddBtn_Click);
             // 
             // JDate
             // 

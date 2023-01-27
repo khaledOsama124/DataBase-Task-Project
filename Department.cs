@@ -13,7 +13,7 @@ namespace EmployeeMgmt1
 {
     public partial class Departments : Form
     {
-        Functions Con;
+        private readonly Functions Con;
         public Departments()
         {
             InitializeComponent();
@@ -38,7 +38,8 @@ namespace EmployeeMgmt1
                 {
                     string Dep = DepNameTb.Text;
                     string Query = "insert into DepartmentTb1 values('{0}')";
-                    Query = string.Format(Query, DepNameTb.Text);
+                    Query = string.Format(Query,
+                                          DepNameTb.Text);
                     Con.SetData(Query);
                     ShowDepartments();
                     MessageBox.Show("Department Added!!!");
@@ -50,10 +51,19 @@ namespace EmployeeMgmt1
                 MessageBox.Show(Ex.Message);
             }
         }
-        int key = 0;
+
+        private int key = 0;
+
+        public Departments(int key) => this.key = key;
+
+        public object DepNameTb { get; private set; }
+        public object DepList { get; private set; }
+
         private void DepList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            DepNameTb.Text = DepList.SelectedRows[0].Cells[0].Value.ToString();
+            DepNameTb.Text = DepList.SelectedRows[0]
+                                    .Cells[0].Value
+                                    .ToString();
             if (DepNameTb.Text == "")
             {
                 key = 0;
@@ -114,7 +124,9 @@ namespace EmployeeMgmt1
             }
         }
 
-        private void EmpLbl_Click(object sender, EventArgs e)
+        private void AddBtn_Click(
+            object sender,
+            EventArgs e)
         {
             Employees obj = new Employees();
             obj.Show();
