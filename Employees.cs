@@ -49,7 +49,7 @@ namespace DataBase_Task_Project
                 {
                     String Name= EmpName.Text;
                     String Gander = GenCp.SelectedItem.ToString(); 
-                    String Dep = GenCp.SelectedItem.ToString();
+                    int Dep = Convert.ToInt32(GenCp.SelectedValue.ToString());
                     String Data_OF_Birth = DOBTb.Value.ToString();
                     String jdate = JDate.Value.ToString();
                     int salary = Convert.ToInt32(DailySaTb.Text);
@@ -62,6 +62,7 @@ namespace DataBase_Task_Project
                     DailySaTb.Text = "";
                     GenCp.SelectedIndex = -1;
                     DepCb.SelectedIndex = -1;
+
 
 
 
