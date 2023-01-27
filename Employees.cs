@@ -84,9 +84,13 @@ namespace DataBase_Task_Project
 
         private void DeleteBtn_Click(object sender, PaintEventArgs e)
         {
+            
 
         }
-        private void UpdateBtn_Click(object sender, PaintEventArgs e)
+    }
+        private void UpdateBtn_Click(
+            object sender,
+            PaintEventArgs e)
         {
             try
             {
@@ -129,4 +133,4 @@ namespace DataBase_Task_Project
         int key = 0;
 
     }
-}
+

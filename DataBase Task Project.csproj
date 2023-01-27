@@ -65,6 +65,7 @@
     <Compile Include="Employees1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EmployeesBase.cs" />
     <Compile Include="Functions.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -88,6 +89,9 @@
     </Compile>
     <EmbeddedResource Include="Department.resx">
       <DependentUpon>Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departmentscs.resx">
+      <DependentUpon>Departmentscs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
