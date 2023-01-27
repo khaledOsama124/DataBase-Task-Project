@@ -32,11 +32,38 @@ namespace DataBase_Task_Project
             String Query = "Select * from DepartmentTb1";
             DepCb.DisplayMember = con.GetData(Query).Columns["DepName"].ToString();
             DepCb.ValueMember = con.GetData(Query).Columns["DepId"].ToString();
-            DepCb.DataSource=con.GetData(Query)
+            DepCb.DataSource = con.GetData(Query);
 
         }
         private void AddBtn_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (DepNameTb.Text == "")
+                {
+                    MessageBox.Show("missing Data!!!");
+
+                }
+                else
+                {
+                    String Dep = DepNameTb.Text;
+                    string Query = "Insert into DepartmentTb1 values {('0')}";
+                    Query = string.Format(DepNameTb.Text);
+                    con.SetData(Query);
+                    ShowDepartments();
+                    MessageBox.Show("Department Tb1");
+                    DepNameTb.Text = Query;
+
+
+
+
+                }
+            }
+            catch (Exception ex)
+
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
     }
