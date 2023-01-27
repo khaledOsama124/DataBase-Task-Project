@@ -82,7 +82,7 @@ namespace DataBase_Task_Project
             return ToString();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void DeleteBtn_Click(object sender, PaintEventArgs e)
         {
 
         }
