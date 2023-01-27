@@ -1,6 +1,6 @@
-﻿namespace DataBase_Task_Project
+﻿namespace EmployeeMgmt1
 {
-    partial class Departmentscs
+    partial class Departments
     {
         /// <summary>
         /// Required designer variable.

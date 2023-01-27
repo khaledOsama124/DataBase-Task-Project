@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataBase_Task_Project;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,56 +9,130 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DataBase_Task_Project
+namespace EmployeeMgmt1
 {
-    public partial class Departmentscs : Form
+    public partial class Departments : Form
     {
-        Functions con;
-
-        public object DepName { get; private set; }
-
-        public Departmentscs()
+        Functions Con;
+        public Departments()
         {
             InitializeComponent();
-            con = new Functions();
+            Con = new Functions();
             ShowDepartments();
         }
         private void ShowDepartments()
         {
-            String Query = "select * From DepartmentTb1";
-            DepList.DataSource =con.GetData(Query);
-
+            string Query = "Select * from DepartmentTb1";
+            DepList.DataSource = Con.GetData(Query);
         }
-        private void AddBtn_click(object sender,EventArgs e)
+
+        private void AddBtn_Click(object sender, EventArgs e)
         {
             try
             {
                 if (DepName.Text == "")
                 {
-                    String Dep = DepName.Text;
-                    String Query = "Insert into DepartmentTb1 values {('0')}";
-                    Query = string.Format(DepName.Text);
-                    con.SetData(Query);
-                    ShowDepartments();
-                    MessageBox.Show("Department Tb1");
-                    DepName.Text = Query;
-
-
-
-
+                    MessageBox.Show("missing data!!!");
                 }
                 else
                 {
-                    MessageBox.Show("missing Data!!!");
-
+                    string Dep = DepName.Text;
+                    string Query = "insert into DepartmentTb1 values('{0}')";
+                    Query = string.Format(Query, DepName.Text);
+                    Con.SetData(Query);
+                    ShowDepartments();
+                    MessageBox.Show("Department Added!!!");
+                    DepNameTb.Text = "";
                 }
             }
-            catch(Exception ex)
-
+            catch (Exception Ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(Ex.Message);
             }
+        }
+        int key = 0;
+        private void DepList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DepNameTb.Text = DepList.SelectedRows[0].Cells[1].Value.ToString();
+            if (DepNameTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(DepList.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
 
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (DepNameTb.Text == "")
+                {
+                    MessageBox.Show("missing data!!!");
+                }
+                else
+                {
+                    string Dep = DepNameTb.Text;
+                    string Query = "Update DepartmentTb1 set Depname = '{0}' where Depid = {1}";
+                    Query = string.Format(Query, DepNameTb.Text, key);
+                    Con.SetData(Query);
+                    ShowDepartments();
+                    MessageBox.Show("Department Updated!!!");
+                    DepNameTb.Text = "";
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (DepNameTb.Text == "")
+                {
+                    MessageBox.Show("missing data!!!");
+                }
+                else
+                {
+                    string Dep = DepNameTb.Text;
+                    string Query = "Delete from DepartmentTb1 where Depid = {0}";
+                    Query = string.Format(Query, key);
+                    Con.SetData(Query);
+                    ShowDepartments();
+                    MessageBox.Show("Department Deleted!!!");
+                    DepNameTb.Text = "";
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
+
+        private void EmpLbl_Click(object sender, EventArgs e)
+        {
+            Employees obj = new Employees();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            Salary Obj = new Salary();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            login Obj = new login();
+            Obj.Show();
+            this.Hide();
         }
     }
 }
