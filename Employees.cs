@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace DataBase_Task_Project
 {
+
     public partial class Employees : Form
     {
         Functions con;
@@ -18,6 +19,7 @@ namespace DataBase_Task_Project
             InitializeComponent();
             con = new Functions();
             showEmp();
+            GetDepartment();
         }
         private void showEmp()
         {
@@ -28,7 +30,10 @@ namespace DataBase_Task_Project
         private void GetDepartment()
         {
             String Query = "Select * from DepartmentTb1";
-            Dep.DisplayMember = 
+            DepCb.DisplayMember = con.GetData(Query).Columns["DepName"].ToString();
+            DepCb.ValueMember = con.GetData(Query).Columns["DepId"].ToString();
+            DepCb.DataSource=con.GetData(Query)
+
         }
         private void AddBtn_Click(object sender, EventArgs e)
         {

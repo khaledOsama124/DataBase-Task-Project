@@ -68,7 +68,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.Deptbl = new System.Windows.Forms.Label();
+            this.EmpTd = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.EmployList = new Guna.UI.WinForms.GunaDataGridView();
@@ -562,17 +562,17 @@
             this.label11.TabIndex = 65;
             this.label11.Text = "Departments";
             // 
-            // Deptbl
+            // EmpTd
             // 
-            this.Deptbl.AutoSize = true;
-            this.Deptbl.BackColor = System.Drawing.Color.White;
-            this.Deptbl.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deptbl.ForeColor = System.Drawing.Color.Teal;
-            this.Deptbl.Location = new System.Drawing.Point(446, 111);
-            this.Deptbl.Name = "Deptbl";
-            this.Deptbl.Size = new System.Drawing.Size(97, 24);
-            this.Deptbl.TabIndex = 64;
-            this.Deptbl.Text = "Employee";
+            this.EmpTd.AutoSize = true;
+            this.EmpTd.BackColor = System.Drawing.Color.White;
+            this.EmpTd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmpTd.ForeColor = System.Drawing.Color.Teal;
+            this.EmpTd.Location = new System.Drawing.Point(446, 111);
+            this.EmpTd.Name = "EmpTd";
+            this.EmpTd.Size = new System.Drawing.Size(97, 24);
+            this.EmpTd.TabIndex = 64;
+            this.EmpTd.Text = "Employee";
             // 
             // pictureBox3
             // 
@@ -669,7 +669,7 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.Deptbl);
+            this.Controls.Add(this.EmpTd);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.UpdateBtn);
@@ -744,7 +744,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label Deptbl;
+        private System.Windows.Forms.Label EmpTd;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI.WinForms.GunaDataGridView EmployList;
