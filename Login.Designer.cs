@@ -180,9 +180,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(82, 331);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(151, 27);
+            this.label5.Size = new System.Drawing.Size(97, 27);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Employee MS ";
+            this.label5.Text = "C# NET";
             // 
             // Login
             // 
