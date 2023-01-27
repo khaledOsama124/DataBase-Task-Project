@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace DataBase_Task_Project
 {
-
+  
     public partial class Employees : Form
     {
         Functions con;
@@ -39,14 +40,19 @@ namespace DataBase_Task_Project
         {
             try
             {
-                if (DepNameTb.Text == "")
+                if (EmpName.Text == "" || GenCp.SelectedIndex == -1 || DepCb.SelectedIndex == -1 || DailySaTb.Text == "")
                 {
                     MessageBox.Show("missing Data!!!");
 
                 }
                 else
                 {
-                    String Dep = Employee Name.Text;
+                    String Name= EmpName.Text;
+                    String Gander = GenCp.SelectedItem.ToString(); 
+                    String Dep = GenCp.SelectedItem.ToString();
+                    String Data_OF_Birth = DOBTb.Value.ToString();
+                    String jdate = JDate.Value.ToString();
+                    int salary = Convert.ToInt32(DailySaTb.Text);
                     string Query = "Insert into DepartmentTb1 values {('0')}";
                     Query = string.Format(DepNameTb.Text);
                     con.SetData(Query);
@@ -65,6 +71,11 @@ namespace DataBase_Task_Project
                 MessageBox.Show(ex.Message);
             }
 
+        }
+
+        private string GetDebuggerDisplay()
+        {
+            return ToString();
         }
     }
 }
