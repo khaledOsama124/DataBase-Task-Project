@@ -28,7 +28,7 @@ namespace DataBase_Task_Project
         private void GetDepartment()
         {
             String Query = "Select * from DepartmentTb1";
-             
+            Dep.DisplayMember = 
         }
         private void AddBtn_Click(object sender, EventArgs e)
         {
