@@ -46,7 +46,7 @@ namespace DataBase_Task_Project
                 }
                 else
                 {
-                    String Dep = DepNameTb.Text;
+                    String Dep = Employee Name.Text;
                     string Query = "Insert into DepartmentTb1 values {('0')}";
                     Query = string.Format(DepNameTb.Text);
                     con.SetData(Query);
