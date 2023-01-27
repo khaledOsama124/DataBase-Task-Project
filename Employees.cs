@@ -103,8 +103,8 @@ namespace DataBase_Task_Project
                     String Data_OF_Birth = DOBTb.Value.ToString();
                     String jdate = JDate.Value.ToString();
                     int salary = Convert.ToInt32(DailySaTb.Text);
-                    string Query = "Insert into DepartmentTb1 values '{0}','{1}','{2}','{3}','{4}','{5}";
-                    Query = string.Format(Query, Name, Gander, Dep, Data_OF_Birth, jdate, salary);
+                    string Query = "Update  DepartmentTb1 set EmpName =  '{0}',EmpGen ='{1}',EmpDep = '{2}',EmpDOB'{3}',EmpJdate'{4}',EmpSal='{5}' where EmpId ='{6}'";
+                    Query = string.Format(Query, Name, Gander, Dep, Data_OF_Birth, jdate, salary,key);
                     con.SetData(Query);
                     showEmp();
                     MessageBox.Show("Employee Tb1");
@@ -124,7 +124,9 @@ namespace DataBase_Task_Project
             {
                 MessageBox.Show(ex.Message);
             }
+            
         }
+        int key = 0;
 
     }
 }
